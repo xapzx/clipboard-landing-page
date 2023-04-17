@@ -1,0 +1,15 @@
+:root {
+    /* Primary */
+
+    --clr-primary-ios: hsl(171, 66%, 44%);
+    --clr-primary-mac: hsl(233, 100%, 69%);
+
+    /* Neutral */
+    --clr-neutral-header-text: hsl(210, 10%, 33%);
+    --clr-neutral-text: hsl(201, 11%, 66%);
+
+    --ff-primary: 'Bai Jamjuree', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 600;
+    --fs-base: 1.125rem;
+}
