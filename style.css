@@ -137,6 +137,7 @@ main {
     .content-info {
         max-width: 60ch;
         margin: 0 auto;
+        line-height: 1.5;
     }
 }
 
@@ -159,36 +160,44 @@ main {
     margin-bottom: 0.625rem;
 }
 
+.device-img {
+    margin-bottom: 6.5rem;
+}
+
 @media (min-width: 900px) {
     .image-text-group {
-        flex-direction: row;
+        display: grid;
+        place-content: center;
+        grid-template-columns: auto auto;
         text-align: left;
         gap: 0;
+        margin-bottom: 9.5rem;
     }
 
     .text-group-wrapper {
         justify-content: center;
         gap: 3.5rem;
-        flex: 0.7;
     }
 
     .text-group {
         padding-right: 13rem;
-        
-    }
-
-    .img-wrapper {
-        position: relative;
-        flex: 1;
+        padding-left: 3rem;
     }
 
     .computer-img {
-        position: absolute;
-        right: 7rem;
+        transform: translateX(-4rem);
+        min-width: 500px;
     }
 
     .text-desc {
         font-size: 1rem;
         width: 35ch;
+        line-height: 2;
+    }
+
+    .device-img {
+        margin: 0 auto 4.5rem;
+        padding-top: 1rem;
     }
 }
+
