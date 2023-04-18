@@ -63,6 +63,11 @@ body {
     padding: 0.75rem 1.5rem;
 }
 
+.ios-btn:hover, .mac-btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
 .ios-btn {
     background-color: var(--clr-primary-ios);
     border-bottom: 3px solid hsla(171, 66%, 35%);
@@ -111,7 +116,7 @@ body {
 }
 
 main {
-    padding: 0 var(--paddingX);
+    padding: 0 var(--paddingX) 10.5rem;
 }
 
 .content-text-wrapper {
@@ -191,7 +196,7 @@ main {
 
     .text-desc {
         font-size: 1rem;
-        width: 35ch;
+        max-width: 35ch;
         line-height: 2;
     }
 
@@ -201,3 +206,117 @@ main {
     }
 }
 
+.flex-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.flex-item > img {
+    margin-bottom: 2rem;
+}
+
+.product-tools {
+    margin-bottom: 8rem;
+}
+
+.used-by-brands {
+    margin-bottom: 10.5rem;
+}
+
+@media (min-width: 900px) {
+    .flex-group {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .product-tools {
+        margin-bottom: 11rem;
+    }
+
+    .used-by-brands {
+        gap: 6rem;
+        margin-bottom: 10rem;
+    }
+
+    .download-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-section > .download-btn-wrapper {
+        margin-top: -2rem;
+    }
+}
+
+footer {
+    background-color: hsl(0, 0%, 95%);
+    color: var(--clr-neutral-header-text);
+    font-size: var(--fs-base);
+    padding: 3rem 0;
+}
+
+.footer-logo {
+    width: 3.5rem;
+}
+
+.row {
+    margin-bottom: 1.5rem;
+}
+
+.row:hover {
+    cursor: pointer;
+    color: var(--clr-primary-ios);
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: -1rem;
+}
+
+.socials:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 900px) {
+    footer {
+        padding: 3rem 10rem;
+        
+    }
+
+    footer.flex-group {
+        gap: 9rem;
+        text-align: left;
+    }
+
+    .footer-nav {
+        flex: 1;
+        display: flex;
+        gap: 6rem;
+    }
+
+    .socials {
+        gap: 1.5rem;
+    }
+
+    .row {
+        margin-bottom: unset;
+    }
+
+    .row:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+}
